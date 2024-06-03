@@ -1,0 +1,13 @@
+name: saludo usando variables
+run-name: Estoy aprendiendo a usar variables
+on: push
+env: 
+  DIA_DE_LA_SEMANA: Lunes
+jobs:
+  saludo-variable:
+    runs-on: ubuntu-latest
+  env:
+    SALUDO: Hola
+  steps:
+    -name: Saludar
+     run: echo "$SALUDO,${{github.actor}}. HOY ES ${{env.DIA_DE_LA_SEMANA}} $"
