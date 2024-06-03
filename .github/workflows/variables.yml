@@ -10,4 +10,4 @@ jobs:
     SALUDO: Hola
   steps:
     -name: Saludar
-     run: echo "$SALUDO,${{github.actor}}. HOY ES ${{env.DIA_DE_LA_SEMANA}} $"
+     run: echo "$SALUDO,${{github.actor}}. HOY ES ${{env.DIA_DE_LA_SEMANA}} "
