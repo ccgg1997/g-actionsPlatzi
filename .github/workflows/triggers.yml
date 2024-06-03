@@ -29,7 +29,7 @@ on:
             default: Cristian
             type: string
   schedule:
-    - cron: '17 01 * * *' 
+    - cron: '18 59 * * *' 
 jobs:
   hola-mundo-manual:
     runs-on: ubuntu-latest
